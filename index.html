@@ -136,7 +136,8 @@
   }
 
   async function loadListings() {
-    const res = await fetch("listings.json"); // ✅ Only this line changed
+    //const res = await fetch("listings.json"); // ✅ Only this line changed
+   const res = await fetch("https://emptycupbackendupenchoudhary.onrender.com/listings");
     const listings = await res.json();
 
     const main = document.querySelector("main");
